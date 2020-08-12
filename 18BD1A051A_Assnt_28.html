@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>18BD1A051A</title>
+<style>
+body{
+margin:0;
+}
+
+h1:not(#heading){background-color:bisque;
+    text-transform:uppercase;
+    border:5px solid brown;
+}
+ul{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   border:5px solid grey;
+   background-color:black;
+   width:20%;
+   position:fixed;
+   height:100%;
+   overflow:auto;
+}
+
+li
+{
+text-align:center;
+border-bottom:1px solid white;
+}
+
+li a
+{display:block;
+color:white;
+font-weight:bold;
+padding:8px 16px;
+text-decoration:none;
+}
+
+li a.active
+{
+background-color:blue;
+color:black;
+}
+
+li a:hover:not(.active)
+{
+background-color:black;
+color:green;
+}
+ 
+pre{margin-left:23%;padding:1 px 16 px;height:1000 px;font-weight:900;font-size:30px;}
+
+
+ 
+</style>
+</head>
+
+<body>
+<h1>Navigation bar</h1>
+<h1 id="heading">Vertical Navigation Bar</h1>
+<ul>
+    <li><a class="active" href="#HOME">HOME</a></li>
+    <li><a href="#HTML">HTML</a></li>
+    <li><a href="#CSS">CSS</a></li>
+    <li><a href="#JAVASCRIPT">JAVASCRIPT</a></li>
+    <li><a href="#XML">XML</a></li>
+</ul>
+
+<pre>Welcome to CSS!
+This is our first navigation bar.
+<pre> 
+</body>
+</html>

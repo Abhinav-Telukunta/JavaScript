@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script tyep="text/javascript">
+            function checkVariable(){
+                var myvar="werw";
+            }
+            function clickButton(){
+                alert(myvar);//myvar is not visible here(error)
+            }
+        </script>
+    </head>
+    <body onload="checkVariable()">
+        <button onclick="clickButton()">Click Me</button>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>18BD1A051A</title>
+    </head>
+    <body>
+        <script>
+            var obj={
+                var1: "Abhinav",
+                var2: "Telukunta",
+                displayInput:function(){
+                    document.write("Print values in function ",this.var1,this.var2,"</br>");
+                }
+            }
+            obj.displayInput();//invoke displayInput function
+            var objcons=Object();//object constructor in javascript
+            objcons.var1="Demo";
+            objcons.var2="On";
+            objcons.var3="Object Constructor";
+            objcons.display=function(){
+                document.write("Print values: ",this.var1,this.var2,this.var3,"</br>");
+            }
+            objcons.display();//invoke display function
+            class displayClass{
+                constructor(param1,param2){
+                    this.param1=param1;
+                    this.param2=param2;
+                }
+            }
+            let disp= new displayClass("new","class");//invoking parameterized constructor
+            document.write(disp.param1);
+            document.write(disp.param2);
+
+        </script>
+    </body>
+</html>
