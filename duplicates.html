@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            18BD1A051A
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function dup(ar)
+        {
+            for(var j=0;j<ar.length;j++)
+            {
+                if (ar.indexOf(ar[j])!==ar.lastIndexOf(ar[j]))
+                {
+                    ar.splice(ar.lastIndexOf(ar[j]),1)
+                }
+            }
+        }
+        var arr=[];
+        var b=prompt("Enter number of elements in array");
+        for(let i=0;i<b;i++){
+            arr.push(prompt("Enter array elements"));
+        }
+        document.write("Entered Array: "+arr);
+        document.write("</br>");
+        dup(arr);
+        document.write("After removing duplicates: "+arr);
+
+        </script>
+    </body>
+
+</html>

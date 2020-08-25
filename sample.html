@@ -1,11 +1,24 @@
 <html>
     <body>
         <script>
-            var a=5,b=1;
-            var obj={a:10};
-            with(obj){
-                alert(b);
-            }
+            var a=[];
+
+a.unshift(1);
+
+a.unshift(22);
+document.write(a+"<br>");
+
+a.shift();
+document.write(a+"<br>");
+
+a.unshift(3,[4,5])
+document.write(a+"<br>");
+a.shift();
+document.write(a+"<br>")
+a.shift();
+document.write(a+"<br>");
+var b=a.shift();
+document.write(b);
         </script>
     </body>
 </html>

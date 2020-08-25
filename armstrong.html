@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Armstrong(18BD1A051A)</title>
+</head>
+<body>
+    <script>
+        let l = prompt("Enter lower bound");
+        let r = prompt("Enter upper bound");
+        document.write("Lower Bound: " + l + "<br>");
+        document.write("Upper Bound: " + r + "<br>");
+        document.write("Armstrong numbers between " + l + " and " + r + " are: <br>");
+        for(var i=l;i<=r;i++){
+            let sum = 0;
+            let num = i;
+
+            while(num > 0){
+                let rem = num % 10;
+                sum += (rem*rem*rem);
+                num = parseInt(num/10);
+            }
+            if(sum == i){
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

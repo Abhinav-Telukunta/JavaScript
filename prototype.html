@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students=["abhinav","vineeth","srinivas"];
+        Array.prototype.displayItems=function(){//user defined function
+            for(var i=0;i<this.length;i++){
+                document.write(this[i]+"<br>");
+            }
+        }
+        students.displayItems();
+        students.sort();
+        students.displayItems();
+        students.reverse();
+        students.displayItems();
+    </script>
+</body>
+</html>

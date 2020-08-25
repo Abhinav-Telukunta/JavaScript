@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vowels</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a sentence");
+        let c = 0;
+        for(var i=0;i<str.length;i++){
+            if(str.charAt(i) == 'a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' ||
+               str.charAt(i)=='u' || str.charAt(i)=='A' || str.charAt(i)=='E' || str.charAt(i)=='I' ||
+               str.charAt(i)=='O' || str.charAt(i)=='U')
+            {
+                c += 1;
+            }
+        }
+        document.write("Given Sentence: " + str + "<br>");
+        document.write("Number of vowels in given sentence is " + c);
+    </script>
+</body>
+</html>

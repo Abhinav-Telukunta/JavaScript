@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">This is sample document</p>
+    <form name="f1">
+        Enter Color: <input type="text" id="t1"><br>
+        <input type="button" value="apply" onclick="addcolor()">
+    </form>
+    <script>
+        function addcolor(){
+            var c=f1.t1.value;
+            document.getElementById("demo").style.color=c; 
+        }
+    </script>
+</body>
+</html>
