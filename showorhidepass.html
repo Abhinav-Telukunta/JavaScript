@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Show or Hide Password using checkbox</p>
+    Password : <input type="password" value="Kmit123$" id="pwd">
+    <input type="checkbox" onclick="show_hide()">Show Password
+    <script>
+        function show_hide(){
+            if(document.getElementById("pwd").type==="password"){//triple equal to is used to compare content along with datatype
+                document.getElementById("pwd").type="text";
+            }
+            else{
+                document.getElementById("pwd").type="password";
+            }
+        }
+    </script>
+</body>
+</html>
