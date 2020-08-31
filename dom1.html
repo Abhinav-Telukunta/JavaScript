@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is paragraph1</p>
+    <p>This is paragraph2</p>
+    <p>This is paragraph3</p>
+    <p>This is paragraph4</p>
+    <p>This is paragraph5</p>
+    <p>This is paragraph6</p>
+    <input type="button" value="Check" onclick="checkValue()">
+    <script>
+        function checkValue(){
+            var a =document.getElementsByTagName("p");
+            for(var x=0;x<a.length;x++){
+                a[x].style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>
