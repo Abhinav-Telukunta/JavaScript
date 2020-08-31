@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+<body>
+    <form>
+        <input id="uname" placeholder="UserName" type="text"><br>
+        <label id="lb" style="color:red; visibility: hidden">Invalid UserName</label><br>
+        <input type="text" placeholder="MobileNumber" id="mobile" onclick="validatemobileno()"><br>
+        <label id="lb1" style="color:red; visibility: hidden">Invalid MobileNumber</label><br>
+        <button onclick="validateusername()">Submit</button><br>
+    </form>
+    <script>
+        function validateusername(){
+            var user=document.getElementById("uname").value;
+            var regx=/^[a-z]+$/i;
+            if(regx.test(user)){
+                alert("Valid User");
+            }
+            else{
+               // alert("Invalid User");
+                document.getElementById("lb").style.visibility="visible";
+            }
+        }
+        function validatemobileno(){
+            var mobileno=document.getElementById("mobile").value;
+            var regx1=/[0-9]{10}/;
+            if(regx1.test(mobileno)){
+                alert("valid mobile number");
+            }
+            else{
+                document.getElementById("lb1").style.visibility="visible";
+            }
+        }
+    </script>
+</body>
+</html>
