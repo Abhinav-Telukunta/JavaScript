@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="MobileNumber" id="mobile"><br>
+        <label id="lb1" style="color:red; visibility: hidden">Invalid MobileNumber</label><br>
+        <button onclick="validatemobileno()">Submit</button><br>
+    </form>
+    <script>
+        function validatemobileno(){
+            var mobileno=document.getElementById("mobile").value;
+            var regx1=/[6-9][0-9]{9}/;//this indicates that mob no should be only digits and first digit is in 6-9 range and length is 10
+            if(regx1.test(mobileno)){
+                alert("valid mobile number");
+            }
+            else{
+                document.getElementById("lb1").style.visibility="visible";
+            }
+        }
+    </script>
+</body>
+</html>
